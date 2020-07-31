@@ -6,328 +6,154 @@ class Page  {
 
     static function header() { ?>
 
-<!DOCTYPE html>
-<html>
+        <!doctype html>
+        <html lang="en">
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles.min">
-    <link rel="stylesheet" href="css/features-boxed.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-</head>
+            <title><?php echo self::$title; ?></title>
+            <!-- <meta http-equiv="refresh" content="3"> -->
 
-<body>
-  <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style="color: rgb(2,6,10);background-color: #5c5e62;">
-    <div class="container">
-        <a class="navbar-brand" href="#">Bysclita</a>
-        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse"
-            id="navcol-1">
-            <ul class="nav navbar-nav">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="home.php">HOME</a>
-                </li>
-                <li class="dropdown nav-item">
-                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">PRODUCTS</a>
-                    <div class="dropdown-menu" role="menu">
-                        <a class="dropdown-item" role="presentation" href="#">Bikes</a>
-                        <a class="dropdown-item" role="presentation" href="#">Scooters</a>
-                        <a class="dropdown-item" role="presentation" href="#"></a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline mr-auto" target="_self">
-                <div class="form-group">
-                    <label for="search-field">
-                        <i class="fa fa-search" style="padding: 16px;">
-                        </i>
-                    </label>
-                    <input class="form-control search-field" type="search" id="search-field" name="search"></div>
-            </form>
-            <span class="navbar-text">
-                <a class="login" href="userLogin.php" style="color: rgb(238,245,245); margin:20PX ;">Log In  </a>
-            </span>
-            <a class="btn btn-light action-button" role="button" href="signup.html">Sign Up</a>
-        </div>
-    </div>
-  </nav>
+        </head>
+        <body>
+        <div class="container">
+            <h1><?php echo self::$title; ?></h1>
 
            
     <?php }
 
-    static function homeContent() {
-        ?>
-            <div style="height: 310px;background-color: #5c5e62;">
-        <h1 style="color: rgb(255,255,255);font-family: 'Abhaya Libre', serif;opacity: 0.85;">Bysclita helps you to find all you need&nbsp;</h1>
-        <hr style="width: 50%;color: rgb(229,232,235);background-color: #fffdfd;"><small class="form-text text-muted">Browse the website to find your product</small></div>
-    <!-- Start: Features Boxed -->
-    <div class="features-boxed" style="height: 600px;">
-        <div style="height: 360;"></div>
-        <div class="container" style="height: 600;">
-            <!-- Start: Intro -->
-            <div class="intro">
-                <h2 class="text-center">Features </h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
-            </div>
-            <!-- End: Intro -->
-            <!-- Start: Features -->
-            <div class="row justify-content-center features" style="height: 400px;">
-                <div class="col-sm-6 col-md-5 col-lg-4 item" style="height: 300px;margin: 0;">
-                    <div class="box"><i class="fa fa-map-marker icon"></i>
-                        <h3 class="name">Works everywhere</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item" style="height: 300px;">
-                    <div class="box" style="margin: 0px;"><i class="fa fa-plane icon"></i>
-                        <h3 class="name">Fast </h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-5 col-lg-4 item" style="height: 300px;">
-                    <div class="box" style="margin: 0px;"><i class="fa fa-phone icon"></i>
-                        <h3 class="name">Mobile-first</h3>
-                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- End: Features -->
-        </div>
-        <div></div>
-        <div></div>
-    </div>
-    <!-- End: Features Boxed -->
-        <?php
-    }
-
-    static function bikesGrid() {
-        ?>
-            <!-- Start: Projects Horizontal -->
-    <div class="projects-horizontal">
-        <div class="container">
-            <!-- Start: Intro -->
-            <div class="intro">
-                <h2 class="text-center">choose your bike or scooter now</h2>
-                <p class="text-center">check availability then BOOK what you need !<br><br><br></p>
-            </div>
-            <!-- End: Intro -->
-            <!-- Start: Projects -->
-            <div class="row projects">
-                <div class="col-sm-6 item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5"><img class="img-fluid" src="images/scooter/scooter2.jpeg"><button class="btn btn-primary" type="button" style="height: 39px;margin: 18px;padding: 2px;width: 93px;">Book now</button></div>
-                        <div class="col">
-                            <h3 class="name">black scooter</h3>
-                            <p class="description">book it now, it's perfect.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5">
-                           <img class="img-fluid" src="images/bike/bike1.jpeg">
-                          <button class="btn btn-primary" type="button" style="height: 39px;margin: 18px;padding: 2px;width: 93px;">Book now</button>
-                        </div>
-                        <div class="col">
-                            <h3 class="name">black bike</h3>
-                            <p class="description">book it now, it's perfect.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5"
-                        ><a href="#"><img class="img-fluid" src="images/bike/bike2.jpeg"></a>
-                          <button class="btn btn-primary" type="button" style="height: 39px;margin: 18px;padding: 2px;width: 93px;">Book now</button></div>
-                        <div class="col">
-                            <h3 class="name">Bike for kid</h3>
-                            <p class="description">Don't be afraid, it's safe.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="images/scooter/scooter1.jpeg"></a><button class="btn btn-primary" type="button" style="height: 39px;margin: 18px;padding: 2px;width: 93px;">Book now</button></div>
-                        <div class="col">
-                            <h3 class="name">blue scooter</h3>
-                            <p class="description">it's not too expensive to rent.</p>
-                        </div>
-                        <div class="col"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- End: Projects -->
-        </div>
-    </div>
-    <!-- End: Projects Horizontal -->
-        <?php
-    }
-
-    static function teamGrid() {
-        ?>
-        <!-- Start: Team Grid -->
-    <div class="team-grid">
-        <div class="container">
-            <!-- Start: Intro -->
-            <div class="intro">
-                <h2 class="text-center">Meet our team</h2>
-                <p class="text-center">her's the team who developed the system , you can contact us at anytime</p>
-            </div>
-            <!-- End: Intro -->
-        </div>
-    </div>
-    <!-- End: Team Grid -->
-    <!-- Start: Team Clean -->
-    <div class="team-clean">
-        <div class="container">
-            <!-- Start: Intro -->
-            <div class="intro"></div>
-            <!-- End: Intro -->
-            <!-- Start: People -->
-            <div class="row people">
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="images/developers/dalia.jpg">
-                    <h3 class="name">Dalia Ahmed</h3>
-                    <p class="title">developer</p>
-                    <div class="social">
-                      <a href="#">
-                        <i class="fab fa-facebook"></i>
-                      </a>
-                      <a href="#"><i class="fab fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item"></div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="images/developers/salma.jpg">
-                    <h3 class="name">Salma Hany</h3>
-                    <p class="title">Developer</p>
-                    <div class="social">
-                      <a href="#">
-                        <i class="fab fa-facebook"></i>
-                      </a>
-                      <a href="#"><i class="fab fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-         </div>
-    <div class="team-clean">
-        <div class="container">
-            <!-- Start: Intro -->
-            <div class="intro"></div>
-            <!-- End: Intro -->
-            <!-- Start: People -->
-            <div class="row people">
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="images/developers/tarek.jpg">
-                    <h3 class="name">Mohamed Tarek</h3>
-                    <p class="title">developer</p>
-                    <div class="social">
-                      <a href="#">
-                        <i class="fab fa-facebook"></i>
-                      </a>
-                      <a href="#"><i class="fab fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 item"></div>
-                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="images/developers/dina.jpg">
-                    <h3 class="name">Dina Hosny</h3>
-                    <p class="title">developer</p>
-                    <div class="social">
-                      <a href="#">
-                        <i class="fab fa-facebook"></i>
-                      </a>
-                      <a href="#"><i class="fab fa-twitter"></i>
-                      </a>
-                      <a href="#">
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </div>
-                </div>
-            </div>
-            <!-- End: People -->
-        </div>
-    </div>
-    <!-- End: Team Clean -->
-        <?php
-    }
-
     static function footer()    { ?>
         </div>
-            
-    <!-- Start: Footer Basic -->
-    <div class="footer-basic">
-        <footer>
-            <!-- Start: Social Icons -->
-            <div class="social">
-              <a href="#">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </div>
-            <!-- End: Social Icons -->
-            <!-- Start: Links -->
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="feedbackform.html">Send feedBack</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <!-- End: Links -->
-            <!-- Start: Copyright -->
-            <p class="copyright">Bysclieta © 2020</p>
-            <!-- End: Copyright -->
-        </footer>
-    </div>
-    <!-- End: Footer Basic -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+            <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                </body>
+            </html>
     <?php }
 
 
     static function showLogin() { ?>
-   
-    <div class="login-clean" style="background-image: url(&quot;assets/img/utah-mountain-biking-bike-biking-71104.jpeg&quot;);height: 561px;width: 100%;">
-        <form method="post" class="form-signin" ACTION="" style="max-width: 330px">
-            <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="icon ion-ios-navigate" style="color: rgb(160,154,155);"></i></div>
-            <div class="form-group"><input class="form-control" type="text" name="userid" placeholder="User ID" required></div>
-            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required></div>
-            <div class="form-group">
-                <button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(150,140,142);">Log In</button>
-            </div><a class="forgot" href="#">Forgot your email or password?</a>
-        </form>
-    </div>
+    
+    <form class="form-signin" ACTION="" METHOD="POST" style="max-width: 330px">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <div class="form-group">
+            <label for="inputUserId" class="sr-only">User ID</label>
+            <input type="text" id="inputUserId" class="form-control" placeholder="User ID" required autofocus name="userid">
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name=password>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+        </div>
+      </form>
+    
 
     <?php }
+
+static function listBooking(Array $bookings)    {
+    ?>
+        <!-- Start the page's show data form -->
+        <section class="main">
+        <h2>Booking Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Booking ID</th>
+                    <th>User ID</th>
+                    <th>Car ID</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <?php
+                foreach($bookings as $booking)  {
+                    echo "<tr>";
+                    echo "<td>".$booking->getBookingId()."</td>";
+                    echo "<td>".$booking->getuUerId()."</td>";
+                    echo "<td>".$booking->getCarId()."</td>";
+                    echo '<td><a href="?action=edit&feedbackid='.$booking->getBookingId().'">Edit</a></td>';
+                    echo '<td><a href="?action=delete&feedbackid='.$booking->getBookingId().'">Delete</td>';
+                    echo "</tr>";
+                } 
+        
+        echo '</table>
+            </section>';
+  
+    }
+
+    static function createBooking()   { ?>        
+        <!-- Start the page's add entry form -->
+        <section class="form1">
+                <h2>Add Booking</h2>
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <td>Booking ID</td>
+                            <td><input type="text" name="bookingid"></td>
+                        </tr>
+                        <tr>
+                            <td>User ID</td>
+                            <td><input type="text" name="userid"></td>
+                        </tr>                        
+                        <tr>
+                            <td>Car ID</td>
+                            <td><input type="datextte" name="carid"></td>
+                        </tr>
+                    </table>
+                    <!-- Use input type hidden to let us know that this action is to create -->
+                    <input type="hidden" name="action" value="create">
+                    <input type="submit" value="Add Booking">
+                </form>
+            </section>
+
+    <?php }
+
+    static function editBookingForm(Booking $booking)   {  ?>        
+        <!-- Start the page's edit entry form -->
+        <section class="form1">
+            <h2>Edit Booking - <?php $booking->getBookingId()?></h2>
+            <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
+                <table>
+                    <tr>
+                        <td>Booking ID</td>
+                        <td><?php $booking->getBookingId() ?></td>
+                    </tr>
+                    <!-- 
+                        You know the drill from the create feedback form 
+                        Make sure to add all input entries corresponding to the selected 
+                        FeedbackID. Don't forget to put the values...
+                    -->
+                    <tr>
+                            <td>User ID</td>
+                            <td><input type="text" name="userid" value=<?php $booking->getUserId() ?>></td>
+                    </tr>
+                    <tr>
+                            <td>Car ID</td>
+                            <td><input type="text" name="carid" value=<?php $booking->getCarId() ?>></td>
+                    </tr>
+                    
+                </table>
+                <!-- We need another hidden input for feedback id here. Why? -->
+                <input type="hidden" name="id" value="<?php  $booking->getBookingId() ?>">
+                
+                <!-- Use input type hidden to let us know that this action is to edit -->
+                <input type="hidden" name="action" value="edit">
+                <input type="submit" value="Edit Booking">                
+            </form>
+        </section>
+
+<?php }
     
 
 }

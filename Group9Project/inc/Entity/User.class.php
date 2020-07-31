@@ -8,7 +8,7 @@ class User{
     private $password ="";
 
     // Getters
-    function getUserId() : int {
+    function getUserId() : string{
         return $this->userId;
     }
 
