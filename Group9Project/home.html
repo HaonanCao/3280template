@@ -1,11 +1,3 @@
-<?php
-
-class Page  {
-
-    public static $title = "Group 9 Project";
-
-    static function header() { ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -36,7 +28,7 @@ class Page  {
             id="navcol-1">
             <ul class="nav navbar-nav">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="home.php">HOME</a>
+                    <a class="nav-link" href="home.html">HOME</a>
                 </li>
                 <li class="dropdown nav-item">
                     <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">PRODUCTS</a>
@@ -56,19 +48,13 @@ class Page  {
                     <input class="form-control search-field" type="search" id="search-field" name="search"></div>
             </form>
             <span class="navbar-text">
-                <a class="login" href="userLogin.php" style="color: rgb(238,245,245); margin:20PX ;">Log In  </a>
+                <a class="login" href="index.html" style="color: rgb(238,245,245); margin:20PX ;">Log In  </a>
             </span>
             <a class="btn btn-light action-button" role="button" href="signup.html">Sign Up</a>
         </div>
     </div>
   </nav>
-
-           
-    <?php }
-
-    static function homeContent() {
-        ?>
-            <div style="height: 310px;background-color: #5c5e62;">
+    <div style="height: 310px;background-color: #5c5e62;">
         <h1 style="color: rgb(255,255,255);font-family: 'Abhaya Libre', serif;opacity: 0.85;">Bysclita helps you to find all you need&nbsp;</h1>
         <hr style="width: 50%;color: rgb(229,232,235);background-color: #fffdfd;"><small class="form-text text-muted">Browse the website to find your product</small></div>
     <!-- Start: Features Boxed -->
@@ -108,12 +94,7 @@ class Page  {
         <div></div>
     </div>
     <!-- End: Features Boxed -->
-        <?php
-    }
-
-    static function bikesGrid() {
-        ?>
-            <!-- Start: Projects Horizontal -->
+    <!-- Start: Projects Horizontal -->
     <div class="projects-horizontal">
         <div class="container">
             <!-- Start: Intro -->
@@ -171,12 +152,7 @@ class Page  {
         </div>
     </div>
     <!-- End: Projects Horizontal -->
-        <?php
-    }
-
-    static function teamGrid() {
-        ?>
-        <!-- Start: Team Grid -->
+    <!-- Start: Team Grid -->
     <div class="team-grid">
         <div class="container">
             <!-- Start: Intro -->
@@ -269,12 +245,6 @@ class Page  {
         </div>
     </div>
     <!-- End: Team Clean -->
-        <?php
-    }
-
-    static function footer()    { ?>
-        </div>
-            
     <!-- Start: Footer Basic -->
     <div class="footer-basic">
         <footer>
@@ -310,24 +280,3 @@ class Page  {
 </body>
 
 </html>
-    <?php }
-
-
-    static function showLogin() { ?>
-   
-    <div class="login-clean" style="background-image: url(&quot;assets/img/utah-mountain-biking-bike-biking-71104.jpeg&quot;);height: 561px;width: 100%;">
-        <form method="post" class="form-signin" ACTION="" style="max-width: 330px">
-            <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="icon ion-ios-navigate" style="color: rgb(160,154,155);"></i></div>
-            <div class="form-group"><input class="form-control" type="text" name="userid" placeholder="User ID" required></div>
-            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" required></div>
-            <div class="form-group">
-                <button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(150,140,142);">Log In</button>
-            </div><a class="forgot" href="#">Forgot your email or password?</a>
-        </form>
-    </div>
-
-    <?php }
-    
-
-}
